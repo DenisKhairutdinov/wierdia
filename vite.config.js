@@ -16,7 +16,7 @@ export default {
 
         preprocessorOptions: {
             scss: {
-                additionalData: `@import './src/var.scss'; 
+                additionalData: `@import './src/vars.scss'; 
                                  @import './src/mixins.scss';`,
             },
         },
