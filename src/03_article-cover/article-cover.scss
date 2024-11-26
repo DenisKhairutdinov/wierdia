@@ -1,0 +1,60 @@
+.article-cover {
+    height: $hrelation * 908;
+    margin: 0 $hrelation * 32;
+    // background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: $hrelation * 40;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: $hrelation * 16;
+}
+
+.article-menu {
+    margin-bottom: $hrelation * 20;
+}
+
+.article-menu__items {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-menu__item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: $hrelation * 20;
+    text-transform: uppercase;
+    padding-left: $hrelation * 12;
+    padding-right: $hrelation * 13;
+    border-right: 1px solid $black;
+    cursor: pointer;
+}
+
+.article-menu__item:first-child {
+    padding-left: 0;
+}
+
+.article-menu__item:last-child {
+    padding-right: 0;
+    border: none;
+}
+
+.article-cover__video {
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    margin-bottom: $hrelation * 20;
+    border-radius: $hrelation * 16;
+}
+
+.article-cover__annotation {
+    width: $hrelation * 558;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: $hrelation * 18;
+    text-align: center;
+    margin-bottom: $hrelation * 48;
+}
