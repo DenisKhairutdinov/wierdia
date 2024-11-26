@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: $hrelation * 16 $hrelation * 16 0 0;
+    margin-bottom: $hrelation * 48;
 }
 
 .header__menu-wrapper {
@@ -36,21 +37,15 @@
     top: $hrelation * 7.5;
 }
 
-.menu__items {
-
-}
-
-.menu__item {
-
-}
-
 .header__logo {
-
+    @include centering;
+    height: 100%;
+    padding: 0 $hrelation * 32;
 }
 
 .logo__img {
-    height: $hrelation * 16;
-    display: block
+    height: $hrelation * 12;
+    display: block;
 }
 
 .theme-switch-wrapper {
