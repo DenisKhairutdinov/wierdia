@@ -2,6 +2,7 @@ html {
     @include centering;
     height: 100%;
     background-color: $grey;
+    user-select: none;
 }
 
 body {
