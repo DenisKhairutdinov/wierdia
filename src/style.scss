@@ -12,3 +12,7 @@ body {
     border-radius: $hrelation * 16;
     box-shadow: 0 0 $hrelation * 6 $black;
 }
+
+.invisible {
+    display: none;
+}
