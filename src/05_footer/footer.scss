@@ -1,0 +1,31 @@
+.footer {
+    height: $hrelation * 10;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: $hrelation * 40;
+    margin: 0 $hrelation * 32;
+}
+
+.footer__line {
+    height: 100%;
+    background-color: $black;
+    border-radius: $hrelation * 5;
+}
+
+.footer__dots {
+    display: flex;
+    flex-direction: row;
+    column-gap: $hrelation * 32;
+
+}
+
+.dots__dot {
+    height: $hrelation * 10;
+    width: $hrelation * 10;
+    border-radius: 50%;
+    border: 1px solid $black;
+}
+
+.active {
+    background-color: $black;
+}
