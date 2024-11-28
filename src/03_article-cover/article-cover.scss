@@ -43,12 +43,14 @@
     border: none;
 }
 
-.article-cover__video {
+.article-cover__video-wrapper {
     height: 100%;
     width: 100%;
     background-color: $black;
     margin-bottom: $hrelation * 20;
     border-radius: $hrelation * 16;
+    overflow: hidden;
+    filter: saturate(40%);
 }
 
 .article-cover__annotation {
