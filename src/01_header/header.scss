@@ -47,29 +47,3 @@
     height: $hrelation * 12;
     display: block;
 }
-
-.theme-switch-wrapper {
-    @include centering;
-    height: $hrelation * 82;
-    width: $hrelation * 90;
-    cursor: pointer;
-}
-
-.theme-switch {
-    height: $hrelation * 18;
-    width: $hrelation * 36;
-    margin-right: $hrelation * 5;
-    background-color: $milk;
-    border-radius: $hrelation * 18;
-    display: flex;
-    align-items: center;
-}
-
-.theme-switch__slider {
-    height: $hrelation * 16;
-    width: $hrelation * 16;
-    background-color: $black;
-    border-radius: 50%;
-    margin-left: $hrelation * 1;
-    margin-right: auto;
-}
