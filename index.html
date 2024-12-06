@@ -10,9 +10,9 @@
   </head>
   <body>
 
-    <header class="header">
-      <div class="header__menu-wrapper">
-        <nav class="header__menu">
+    <header id="invisible" class="header">
+      <div class="menu-wrapper">
+        <nav class="menu">
           <ul class="menu__items">
             <li class="menu__item"></li>
             <li class="menu__item"></li>
@@ -32,7 +32,30 @@
       </div>
     </header>
 
-    <section class="article-cover">
+    <section class="main-cover">
+      <h1 id="invisible">wierdia</h1>
+      <img class="main-cover__logo" src="./src/02_main-cover/img/logo.svg" alt="logo" >
+      <div id="menu-wrapper" class="menu-wrapper">
+        <nav id="menu" class="menu">
+          <ul id="menu__items" class="menu__items">
+          </ul>
+          
+        </nav>
+        <div id="menu__dots" class="menu__dots">
+          <div class="menu__dot"></div>
+        </div>
+      </div>
+      <div class="main-cover__img-wrapper">
+        <img class="main-cover__img" src="./src/02_main-cover/img/1.png" alt="" >
+      </div>
+      <div id="switch-wrapper" class="theme-switch-wrapper">
+        <div class="theme-switch light-theme">
+          <div id="switch-slider" class="theme-switch__slider"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="invisible" class="article-cover">
       <h2 id="title" class="title"></h2>
       <nav class="article-menu">
         <ol id="article-menu__items" class="article-menu__items">
@@ -48,7 +71,7 @@
       <p id="article-cover__annotation" class="article-cover__annotation"></p>
     </section>
     
-    <footer class="footer">
+    <footer id="invisible" class="footer">
       <div class="footer__line"></div>
       <div id="footer__dots" class="footer__dots">
         <div class="dots__dot active"></div>
