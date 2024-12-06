@@ -1,0 +1,89 @@
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: $hrelation * 23;
+    width: $hrelation * 242;
+    // border: 1px solid $black;
+    border-radius: $hrelation * 24;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    transform-origin: 50% 0;
+    // background-color: red;
+}
+
+.menu-wrapper:hover {
+    box-shadow: 0 0 12px -4px $black;
+    transform: scale(1.005);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: $hrelation * 196;
+    overflow: hidden;
+    margin: $hrelation * 23;
+    // background-color: black;
+}
+
+.menu__items {
+    height: $hrelation * 600;
+    width: max-content;
+    margin-bottom: $hrelation * 20;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 3;
+    transition: transform 200ms linear;
+    // background-color: aqua;
+}
+
+.menu__item {
+    width: $hrelation * 196;
+    font-family: 'Jost', sans-serif;
+    font-size: $hrelation * 22;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 130%;
+    text-align: center;
+    padding: $hrelation * 8;
+    padding-top: $hrelation * 9;
+    border-bottom: 1px solid $black;
+    color: $black;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.menu__item:hover {
+    background-color: $black;
+    color: $milk;
+}
+
+.menu__item:last-child {
+    border-bottom: 0;
+}
+
+.menu__dots {
+    // background-color: aqua;
+    display: flex;
+    justify-content: center;
+    column-gap: $hrelation * 20;
+}
+
+
+.menu__dot {
+    height: $hrelation * 8;
+    width: $hrelation * 8;
+    background-color: $grey;
+    border-radius: 50%;
+    transition: background-color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+
+.active-dot {
+    background-color: $black;
+    transform: scale(1.2);
+    transition: background-color 200ms ease-in-out 400ms, transform 200ms ease-in-out 400ms;
+}
