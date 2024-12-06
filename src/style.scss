@@ -9,10 +9,11 @@ body {
     height: $height;
     width: $height;
     background-color: $milk;
-    border-radius: $hrelation * 16;
-    box-shadow: 0 0 $hrelation * 6 $black;
+    border-radius: $hrelation * 36;
+    box-shadow: 0 0 $hrelation * 8 $hrelation * (- 4) $black;
+    overflow: hidden;
 }
 
-.invisible {
+#invisible {
     display: none;
 }
