@@ -6,6 +6,8 @@ const title = document.getElementById('title');
 const articleMenuItems = document.getElementById('article-menu__items');
 const menuItem = document.getElementsByClassName('article-menu__item');
 const annotation = document.getElementById('article-cover__annotation');
+const videoWrapper = document.getElementById('article-cover__video-wrapper');
+const video = document.getElementById('article-cover__video');
 
 contentSelection(urlContent);
 
@@ -29,5 +31,8 @@ async function contentSelection(url) {
         menuItem[i].innerHTML = value[1][i];
     }
 
-    annotation.innerHTML = value[4][0];   
+    annotation.innerHTML = value[4][0];  
+    
+    video.style.width = `${videoWrapper.offsetHeight * 16 / 9}px`;
+    video.style.transform = `translateX(${(videoWrapper.offsetWidth - video.offsetWidth) / 2}px`;
 }
