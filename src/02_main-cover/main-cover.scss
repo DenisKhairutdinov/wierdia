@@ -1,0 +1,51 @@
+.main-cover {
+    display: grid;
+    grid-template-areas: 'logo logo'
+                         'menu image'
+                         'switch image';
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    column-gap: $hrelation * 16;
+    height: 100%;
+    padding: $hrelation * 32;
+}
+
+.main-cover__logo {
+    grid-area: logo;
+    display: block;
+    width: 100%;
+    margin-bottom: $hrelation * 24;
+}
+
+.main-cover__img-wrapper {
+    grid-area: image;
+    background-color: $grey;
+    border-radius: $hrelation * 24;
+    overflow: hidden;
+}
+
+.main-cover__img {
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(50%);
+}
+
+.main-cover {
+    .theme-switch-wrapper {
+        grid-area: switch;
+        width: $hrelation * 100;
+        transform: translateX(- $hrelation * 32);
+        margin-bottom: - $hrelation * 32;
+        border-bottom-left-radius: $hrelation * 20;
+    }
+
+    .theme-switch {
+        border: 1px solid $black;
+        box-sizing: content-box;
+        margin-right: 0;
+    }
+}
+
+.menu-wrapper {
+    grid-area: menu;
+}
